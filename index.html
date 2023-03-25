@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>YouTube Search Bar</title>
+    <style>
+      #searchInput {
+        width: 500px;
+        height: 30px;
+        font-size: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+      }
+      #searchButton {
+        height: 40px;
+        font-size: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px 20px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>YouTube Search Bar</h1>
+    <form onsubmit="return false;">
+      <input type="text" id="searchInput" placeholder="Search for videos">
+      <button id="searchButton">Search</button>
+    </form>
+    <p id="searchResult"></p>
+    <ul id="searchedList"></ul>
+    
+
+    <script src="./function.js"></script>
+</body>
+</html>
